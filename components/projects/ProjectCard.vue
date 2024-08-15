@@ -4,8 +4,8 @@
     :padded="false">
     <div class="flex flex-col text-start h-full group">
       <div class="relative h-36 group cursor-pointer">
-        <img :src="getImageFilename(project.image)" :alt="project.name" class="w-full h-full object-cover object-center"
-          loading="lazy">
+        <NuxtImg :src="getImageFilename(project.image)" :alt="project.name"
+          class="w-full h-full object-cover object-center" loading="lazy" />
         <ProjectsImageModal :image="getImageFilename(project.image)" class="absolute w-full h-full top-0 left-0" />
       </div>
 

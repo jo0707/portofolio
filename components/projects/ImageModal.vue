@@ -8,7 +8,7 @@
 
     <UModal v-model="isOpen">
       <div class="p-4 w-full">
-        <img class="w-full object-contain" :src="image" />
+        <NuxtImg class="w-full object-contain" :src="image" />
       </div>
     </UModal>
   </div>

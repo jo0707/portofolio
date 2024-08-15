@@ -1,11 +1,13 @@
 export default defineNuxtConfig({
-    modules: ["@hypernym/nuxt-anime", "@vueuse/nuxt", "@nuxt/ui", "@nuxt/fonts", "@nuxtjs/seo"],
-
-    ssr: false,
+    modules: ["@hypernym/nuxt-anime", "@vueuse/nuxt", "@nuxt/ui", "@nuxt/fonts", "@nuxtjs/seo", "@nuxt/image"],
 
     anime: {
         composables: true,
         autoImport: true,
+    },
+
+    image: {
+        provider: "ipx",
     },
 
     colorMode: {
