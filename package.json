@@ -18,6 +18,7 @@
     "@nuxtjs/seo": "^2.0.0-rc.18",
     "@vueuse/nuxt": "^10.11.1",
     "nuxt": "^3.12.4",
+    "nuxt-gtag": "^2.1.0",
     "vue": "latest"
   }
 }
