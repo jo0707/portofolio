@@ -1,7 +1,7 @@
 <template>
   <div class="w-fit">
     <h2 class="text-3xl lg:text-5xl font-bold text-primary">{{ title }}</h2>
-    <SlidingBar class="w-full h-[3px]" :duration="2000" :delay="0" />
+    <SlidingBar class="w-full h-[3px]" :duration="2000" :delay="500" />
   </div>
 </template>
 

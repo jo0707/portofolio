@@ -2,6 +2,15 @@ import type { Project } from "~/types/projects"
 
 export const projects: Project[] = [
     {
+        name: "PPLK ITERA 2024",
+        description:
+            "A platform introducing new students to campus life at Institut Teknologi Sumatera, contributed as frontend subdivision staff.",
+        githubUrl: "",
+        image: "pplkitera2024",
+        url: "https://pplkitera.com/",
+        technologies: ["React", "Inertia"],
+    },
+    {
         name: "Ketik Cepat!",
         description: "A typing speed training application while learning English and Indonesian language.",
         githubUrl: "https://github.com/jo0707/ketikcepat",

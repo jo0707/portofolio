@@ -16,6 +16,7 @@
     "@nuxt/fonts": "^0.7.1",
     "@nuxt/image": "^1.7.0",
     "@nuxt/ui": "^2.18.4",
+    "@nuxtjs/seo": "^2.0.0-rc.18",
     "@vueuse/nuxt": "^10.11.1",
     "nuxt": "^3.12.4",
     "vue": "latest"

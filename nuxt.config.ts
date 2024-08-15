@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-    modules: ["@hypernym/nuxt-anime", "@vueuse/nuxt", "@nuxt/ui", "@nuxt/fonts"],
+    modules: ["@hypernym/nuxt-anime", "@vueuse/nuxt", "@nuxt/ui", "@nuxt/fonts", "@nuxtjs/seo"],
 
     anime: {
         composables: true,
@@ -13,6 +13,14 @@ export default defineNuxtConfig({
     ui: {
         global: true,
         safelistColors: ["amber", "green", "sky", "blue", "rose"],
+    },
+
+    site: {
+        url: "https://jooo.site",
+        name: "Joshua Sinaga's Portofolio",
+        description:
+            "Joshua Palti Sinaga is a web and mobile developer and currently an informatics engineering student. Love to learn new things and solving problems around me.",
+        defaultLocale: "en",
     },
 
     compatibilityDate: "2024-04-03",

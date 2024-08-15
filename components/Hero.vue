@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen w-screen flex flex-col place-content-center place-items-center text-center">
+  <div class="h-screen w-screen flex flex-col place-content-center place-items-center text-center px-4">
     <img id="profile" src="/img/profile.webp" alt="profile" class="w-28 h-28 sm:w-40 sm:h-40 rounded-full" />
 
     <Hello id="hello" class="mt-12 py-2" />
