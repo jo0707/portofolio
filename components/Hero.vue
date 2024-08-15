@@ -7,9 +7,10 @@
 
     <h2 id="greet1" class="mt-6 text-xl lg:text-2xl">I am Joshua Sinaga</h2>
     <h3 id="greet2" class="mt-1 max-lg:text-sm">
-      A software developer that focuses on web and android platforms</h3>
+      A software developer that focuses on web and mobile platforms</h3>
   </div>
 </template>
+
 
 <script lang="ts" setup>
 onMounted(() => {
