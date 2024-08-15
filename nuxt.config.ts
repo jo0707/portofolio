@@ -6,10 +6,10 @@ export default defineNuxtConfig({
         autoImport: true,
     },
 
-    ssr: false,
-    nitro: {
-        static: true,
-    },
+    // ssr: false,
+    // nitro: {
+    //     static: true,
+    // },
 
     // image: {
     //     provider: process.env.VERCEL_ENV ? "vercel" : "ipx",
