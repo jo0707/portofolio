@@ -5,9 +5,9 @@
     <Hello id="hello" class="mt-12 py-2" />
     <SlidingBar class="w-40 sm:w-64 h-[3px]" :duration="2000" :delay="1500" />
 
-    <h3 id="greet1" class="mt-6 text-xl lg:text-2xl">I am Joshua Sinaga</h3>
-    <h4 id="greet2" class="mt-1 max-lg:text-sm">
-      A software developer that focuses on web and android platforms</h4>
+    <h2 id="greet1" class="mt-6 text-xl lg:text-2xl">I am Joshua Sinaga</h2>
+    <h3 id="greet2" class="mt-1 max-lg:text-sm">
+      A software developer that focuses on web and android platforms</h3>
   </div>
 </template>
 

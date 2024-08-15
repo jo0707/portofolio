@@ -1,6 +1,6 @@
 <template>
   <UPopover mode="hover">
-    <UButton size="xs" color="primary" label="Stack" variant="soft" />
+    <UButton size="xs" color="primary" label="Stack" variant="soft" name="techstack" aria-label="Tech Stacks" />
 
     <template #panel>
       <Card class="p-4">

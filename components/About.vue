@@ -24,12 +24,16 @@
                 <ul class="flex flex-wrap gap-2">
                     <li v-for="skill in skills" :key="skill.icon">
                         <UPopover mode="hover" strategy="absolute">
-                            <UIcon :name="skill.icon" class="w-8 h-8" />
+                            <UButton :padded="false" class="rounded overflow-hidden" variant="ghost"
+                                :aria-label="skill.name" :name="skill.name">
+                                <UIcon :name="skill.icon" class="w-8 h-8" />
+                            </UButton>
 
                             <template #panel>
                                 <Card>
                                     <p class="text-sm text-primary">{{ skill.name }}</p>
-                                    <UButton variant="link" size="xs" color="white" :padded="false" :to="skill.link">{{ skill.link }}
+                                    <UButton variant="link" size="xs" color="white" :padded="false" :to="skill.link">{{
+                        skill.link }}
                                     </UButton>
                                 </Card>
                             </template>

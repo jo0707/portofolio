@@ -1,5 +1,6 @@
 <template>
-  <Card class="hover:scale-105 transition duration-300 dark:bg-gray-950 h-72 lg:h-[22rem] overflow-hidden group border border-gray-200 dark:border-gray-800"
+  <Card
+    class="hover:scale-105 transition duration-300 dark:bg-gray-950 h-72 lg:h-[22rem] overflow-hidden group border border-gray-200 dark:border-gray-800"
     :padded="false">
     <div class="flex flex-col text-start h-full group">
       <div class="relative h-36 group cursor-pointer">
@@ -22,10 +23,10 @@
           <TechPopover class="w-fit self-end" :project="project" />
           <div class="grow"></div>
           <UButton size="xs" variant="soft" icon="i-ri-github-fill" :to="project.githubUrl" target="_blank"
-            :disabled="!project.githubUrl">
+            :disabled="!project.githubUrl" :name="`${project.name}-github`" :aria-label="`${project.name}-github`">
           </UButton>
           <UButton size="xs" variant="soft" icon="i-heroicons-window-solid" :to="project.url" target="_blank"
-            :disabled="!project.url">
+            :disabled="!project.url" :name="`${project.name}-demo`" :aria-label="`${project.name}-demo`">
           </UButton>
         </div>
       </div>
