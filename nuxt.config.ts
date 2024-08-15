@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     },
 
     image: {
-        provider: "ipx",
+        provider: process.env.VERCEL_ENV ? "vercel" : "ipx",
         domains: ["jooo.site", "www.jooo.site", "portofolio-neon-delta.vercel.app"],
     },
 
