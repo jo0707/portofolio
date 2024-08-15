@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen grid place-content-center pt-16">
+    <div class="min-h-screen grid place-content-center pt-16 max-lg:px-8">
         <div ref="target" class="flex flex-col place-content-center text-center max-w-4xl gap-6">
             <SectionTitle title="Projects" class="mx-auto" />
             <p class="max-lg:text-sm">A look at projects I've created or collaborated on with my team</p>
