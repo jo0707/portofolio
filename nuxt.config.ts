@@ -1,5 +1,12 @@
 export default defineNuxtConfig({
-    modules: ["@hypernym/nuxt-anime", "@vueuse/nuxt", "@nuxt/ui", "@nuxt/fonts", "@nuxtjs/seo"],
+    modules: [
+        "@hypernym/nuxt-anime",
+        "@vueuse/nuxt",
+        "@nuxt/ui",
+        "@nuxt/fonts",
+        "@nuxtjs/seo",
+        "nuxt-gtag"
+    ],
 
     anime: {
         composables: true,
