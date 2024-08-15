@@ -5,7 +5,8 @@
       <div
         class="absolute top-0 left-0 w-full h-full translate-y-[101%] group-hover:translate-y-0 transition duration-300 ease-out bg-primary bg-opacity-20">
       </div>
-      <span class="w-full h-full text-primary transition duration-300 font-medium">{{ nav.name }}</span>
+      <span class="w-full h-full text-primary-600 dark:text-primary-400 transition duration-300 font-medium">{{ nav.name
+        }}</span>
     </NuxtLink>
   </div>
 </template>
