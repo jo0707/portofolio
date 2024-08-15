@@ -8,6 +8,7 @@ export default defineNuxtConfig({
 
     image: {
         provider: "ipx",
+        domains: ["jooo.site", "www.jooo.site", "portofolio-neon-delta.vercel.app"],
     },
 
     colorMode: {
