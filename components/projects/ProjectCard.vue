@@ -1,5 +1,5 @@
 <template>
-  <Card class="hover:scale-105 transition duration-300 dark:bg-gray-950 h-[22rem] overflow-hidden group border border-gray-200 dark:border-gray-800"
+  <Card class="hover:scale-105 transition duration-300 dark:bg-gray-950 h-72 lg:h-[22rem] overflow-hidden group border border-gray-200 dark:border-gray-800"
     :padded="false">
     <div class="flex flex-col text-start h-full group">
       <div class="relative h-36 group cursor-pointer">
@@ -16,7 +16,7 @@
             </div>
           </div>
         </div>
-        <p class="text-sm self-stretch flex-1 line-clamp-4">{{ project.description }}</p>
+        <p class="text-xs lg:text-sm self-stretch flex-1 line-clamp-4">{{ project.description }}</p>
 
         <div class="flex gap-2">
           <TechPopover class="w-fit self-end" :project="project" />

@@ -1,5 +1,5 @@
 <template>
-  <UPopover mode="hover" :popper="{ strategy: 'fixed' }" class="w-fit">
+  <UPopover :popper="{ strategy: 'fixed' }" class="w-fit">
     <template #default="{ open }">
       <UButton color="gray" variant="ghost" square :class="[open && 'bg-gray-50 dark:bg-gray-800']"
         aria-label="Color picker">

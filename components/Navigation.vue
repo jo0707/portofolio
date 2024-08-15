@@ -1,31 +1,14 @@
 <template>
-  <ul class="flex gap-4 p-4">
-    <li v-for="nav in navigations">
-      <UButton size="sm" :key="nav.name" :to="nav.link" :label="nav.name" variant="ghost" />
-    </li>
+  <ul class="flex max-md:text-sm md:gap-4">
+    <NuxtLink v-for="nav in navigations" :key="nav.name" :to="nav.link" class="relative group overflow-hidden px-2 sm:px-4 py-4">
+      <div
+        class="absolute top-0 left-0 w-full h-full translate-y-[101%] group-hover:translate-y-0 transition duration-300 ease-out bg-primary bg-opacity-20">
+      </div>
+      <span class="w-full h-full text-primary transition duration-300">{{ nav.name }}</span>
+    </NuxtLink>
   </ul>
 </template>
 
 <script lang="ts" setup>
-const navigations = [
-  {
-    name: "Jo",
-    link: "/",
-  },
-  {
-    name: "About",
-    link: "#about",
-  },
-  {
-    name: "Projects",
-    link: "#projects",
-  },
-  {
-    name: "Contact",
-    link: "#contact"
-  }
-]
-
+import { navigations } from '~/data/navigations';
 </script>
-
-<style></style>

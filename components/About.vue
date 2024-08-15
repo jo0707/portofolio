@@ -1,12 +1,7 @@
 <template>
-    <div class="min-h-screen grid place-content-center">
+    <div class="min-h-screen grid place-content-center max-lg:px-8">
         <div ref="target" class="flex flex-col place-content-center text-justify max-w-3xl gap-6">
-            <div class="w-fit mb-8">
-                <h2 class="text-5xl font-bold text-primary text-start">About Me</h2>
-                <SlidingBar class="w-full h-[3px]" :duration="2000" :delay="1000" />
-            </div>
-
-            <!-- TODO: Tech Stack -->
+            <SectionTitle title="About" />
 
             <p>
                 I am Joshua Palti Sinaga, an Informatics Engineering student.
@@ -20,13 +15,13 @@
                 Began my focus in programming at 16 years old, I had the honor of participating in and winning 1st place
                 at the LKS North Sumatera competition 🏆.
             </p>
-            <p>
+            <p class="max-lg:hidden">
                 Currently, I am studying Informatics Engineering at the Sumatra Institute of Technology (ITERA).
             </p>
 
             <div class="flex flex-col gap-2">
                 <h3 class="text-primary font-semibold">Tech Stacks</h3>
-                <ul class="flex gap-2">
+                <ul class="flex flex-wrap gap-2">
                     <li v-for="skill in skills" :key="skill.icon">
                         <UPopover mode="hover" strategy="absolute">
                             <UIcon :name="skill.icon" class="w-8 h-8" />

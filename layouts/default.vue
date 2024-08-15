@@ -13,10 +13,15 @@
       <slot />
     </main>
 
+    <!-- <section class="fixed top-1/2 right-4 z-50 -translate-y-1/2">
+      <SideNavigation class="place-content-center" />
+    </section> -->
+
     <footer>
-      <div id="fixedFooter" class="fixed w-full bottom-0 left-0 flex justify-between p-4 translate-y-96">
-        <FooterSocialMedia />
-        <FooterThemeSelector />
+      <div id="fixedFooter"
+        class="fixed w-full bottom-0 left-0 flex max-md:place-content-center md:justify-between p-4 translate-y-96">
+        <FooterSocialMedia class="max-md:hidden" />
+        <FooterThemeSelector class="max-md:w-full" />
       </div>
     </footer>
   </div>
