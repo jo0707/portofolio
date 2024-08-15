@@ -10,7 +10,7 @@
     <template #panel>
       <div class="p-2">
         <div class="grid grid-cols-5">
-          <UButton v-for="color in primaryColors" :key="color.value" variant="ghost" :selected="primary"
+          <UButton size="sm" v-for="color in primaryColors" :key="color.value" variant="ghost" :selected="primary"
             @click="primary = color">
             <div class="rounded-full w-4 h-4" :class="`bg-${color.value}-500 dark:bg-${color.value}-400`"></div>
           </UButton>

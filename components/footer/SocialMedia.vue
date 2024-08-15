@@ -1,5 +1,5 @@
 <template>
-  <Card class="flex gap-4 z-50">
+  <Card class="flex gap-4 z-50 max-lg:p-1">
     <div v-for="social in socials">
       <UButton size="sm" :key="social.name" :to="social.link" target="_blank" variant="ghost" :name="social.name"
         :aria-label="social.name">

@@ -19,9 +19,9 @@
 
     <footer>
       <div id="fixedFooter"
-        class="fixed w-full bottom-0 left-0 flex max-md:place-content-center md:justify-between p-4 translate-y-96">
-        <FooterSocialMedia class="max-md:hidden" />
-        <FooterThemeSelector class="max-md:w-full" />
+        class="fixed w-full bottom-0 left-0 flex max-md:place-content-center md:justify-between p-2 lg:p-4 translate-y-96">
+        <FooterSocialMedia class="max-md:hidden dark:border dark:border-primary-500/20" />
+        <FooterThemeSelector class="max-md:w-full dark:border dark:border-primary-500/20" />
       </div>
     </footer>
   </div>
