@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-    modules: ["@hypernym/nuxt-anime", "@vueuse/nuxt", "@nuxt/ui", "@nuxt/fonts", "@nuxtjs/seo", "@nuxt/image"],
+    modules: ["@hypernym/nuxt-anime", "@vueuse/nuxt", "@nuxt/ui", "@nuxt/fonts", "@nuxtjs/seo"],
 
     anime: {
         composables: true,
@@ -11,10 +11,10 @@ export default defineNuxtConfig({
         static: true,
     },
 
-    image: {
-        provider: process.env.VERCEL_ENV ? "vercel" : "ipx",
-        domains: ["jooo.site", "www.jooo.site", "portofolio-neon-delta.vercel.app"],
-    },
+    // image: {
+    //     provider: process.env.VERCEL_ENV ? "vercel" : "ipx",
+    //     domains: ["jooo.site", "www.jooo.site", "portofolio-neon-delta.vercel.app"],
+    // },
 
     colorMode: {
         preference: "light",
