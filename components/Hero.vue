@@ -5,7 +5,7 @@
       <img v-if="isAvatar" src="/img/profile.webp" alt="profile"
         class="absolute top-0 left-0 w-full h-full object-cover" />
       <img v-else src="/img/logo.webp" alt="logo" class="absolute top-0 left-0 w-full h-full object-cover" />
-      <div ref="avatarOverlay" id="avatarOverlay" class="w-[102%] h-full -translate-x-[101%] bg-primary-500"></div>
+      <div ref="avatarOverlay" id="avatarOverlay" class="w-[110%] h-full -translate-x-[101%] bg-primary-500"></div>
     </div>
 
     <Hello id="hello" class="mt-12 py-2" />
@@ -62,7 +62,7 @@ onMounted(() => {
   let overlayAnimation = useAnime({
     targets: '#avatarOverlay',
     loop: true,
-    translateX: ['-101%', '101%'],
+    translateX: ['-108%', '102%'],
     easing: 'easeInOutExpo',
     duration: 3000,
     delay: 5000

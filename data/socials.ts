@@ -15,7 +15,7 @@ export const socials = [
         name: "instagram",
         link: "https://instagram.com/jo907__",
         icon: "i-ri-instagram-fill",
-        color: "sky",
+        color: "purple",
     },
     {
         name: "email",

@@ -21,8 +21,8 @@
 
             <div class="flex flex-col gap-2">
                 <h3 class="text-primary font-semibold">Tech Stacks</h3>
-                <ul class="flex flex-wrap gap-2">
-                    <li v-for="skill in skills" :key="skill.icon">
+                <ul ref="skillList" class="flex flex-wrap gap-2">
+                    <li :id="`skills${i}`" v-for="skill, i in skills" :key="skill.icon" class="opacity-0">
                         <UPopover mode="hover" strategy="absolute">
                             <UButton :padded="false" class="rounded overflow-hidden" variant="ghost"
                                 :aria-label="skill.name" :name="skill.name">
@@ -33,7 +33,7 @@
                                 <Card>
                                     <p class="text-sm text-primary">{{ skill.name }}</p>
                                     <UButton variant="link" size="xs" color="white" :padded="false" :to="skill.link">{{
-                        skill.link }}
+                                        skill.link }}
                                     </UButton>
                                 </Card>
                             </template>
@@ -47,6 +47,8 @@
 
 <script setup lang="ts">
 const target = ref<HTMLElement | null>(null)
+const skillList = ref<HTMLElement | null>(null)
+const isSkillVisible = useElementVisibility(skillList)
 
 const skills = [
     { icon: 'i-skill-icons-typescript', name: 'TypeScript', link: 'https://www.typescriptlang.org/' },
@@ -56,4 +58,25 @@ const skills = [
     { icon: 'i-skill-icons-mongodb', name: 'MongoDB', link: 'https://www.mongodb.com/' },
     { icon: 'i-vscode-icons-file-type-capacitor', name: 'Capacitor', link: 'https://capacitorjs.com/' },
 ];
+
+function animateSkills() {
+    skills.forEach((_, i) => {
+        useAnime({
+            targets: `#skills${i}`,
+            translateY: [20, 0],
+            opacity: [0, 1],
+            duration: 1500,
+            delay: (200 * i) + 400,
+            easing: 'easeOutExpo',
+        })
+    })
+}
+
+onMounted(() => {
+    watchOnce(isSkillVisible, (isVisible) => {
+        if (isVisible) {
+            animateSkills()
+        }
+    })
+})
 </script>
