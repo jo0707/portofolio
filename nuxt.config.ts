@@ -6,6 +6,11 @@ export default defineNuxtConfig({
         autoImport: true,
     },
 
+    ssr: false,
+    nitro: {
+        static: true,
+    },
+
     image: {
         provider: process.env.VERCEL_ENV ? "vercel" : "ipx",
         domains: ["jooo.site", "www.jooo.site", "portofolio-neon-delta.vercel.app"],
