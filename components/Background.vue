@@ -1,6 +1,7 @@
 <template>
   <div class="fixed top-0 left-0 h-screen w-screen bg-gray-300 dark:bg-gray-700">
-    <div ref="slideup" id="slideup" class="bg-white dark:bg-gray-900 h-screen w-screen opacity-0"></div>
+    <div ref="slideup" id="slideup" class="bg-white dark:bg-gray-900 h-screen w-screen opacity-0">
+    </div>
   </div>
 </template>
 
@@ -20,7 +21,6 @@ onMounted(() => {
       duration: 1000
     }
   })
-
 
   animation.changeComplete = () => {
     slideup.value?.classList.add('transition')
