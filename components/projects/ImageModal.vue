@@ -7,8 +7,13 @@
     </div>
 
     <UModal v-model="isOpen">
-      <div class="p-4 w-full">
-        <img class="w-full object-contain" :src="image" />
+      <div class="w-full flex flex-col gap-2 p-4 ">
+        <img class="w-full object-contain rounded " :src="image" />
+        <div class="grid grid-cols-2 gap-2">
+          <UButton :disabled="!url" label="Demo" icon="i-heroicons-window-solid" :to="url" block variant="outline" />
+          <UButton :disabled="!githubUrl" label="Github" icon="i-ri-github-fill" :to="githubUrl" block
+            variant="outline" />
+        </div>
       </div>
     </UModal>
   </div>
@@ -16,7 +21,9 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  image: string
+  image: string,
+  url: string | undefined
+  githubUrl: string | undefined
 }>()
 
 const isOpen = ref(false)

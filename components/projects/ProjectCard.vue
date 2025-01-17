@@ -6,7 +6,7 @@
       <div class="relative h-36 group cursor-pointer">
         <img :src="getImageFilename(project.image)" :alt="project.name" class="w-full h-full object-cover object-center"
           loading="lazy" />
-        <ProjectsImageModal :image="getImageFilename(project.image)" class="absolute w-full h-full top-0 left-0" />
+        <ProjectsImageModal :githubUrl="project.githubUrl" :url="project.url" :image="getImageFilename(project.image)" class="absolute w-full h-full top-0 left-0" />
       </div>
 
       <div class="p-3 flex flex-col gap-2 grow group">
@@ -22,11 +22,11 @@
         <div class="flex gap-2">
           <TechPopover class="w-fit self-end" :project="project" />
           <div class="grow"></div>
+          <UButton size="xs" variant="soft" icon="i-heroicons-window-solid" :to="project.url" target="_blank" label="Demo"
+          :disabled="!project.url" :name="`${project.name}-demo`" :aria-label="`${project.name}-demo`">
+        </UButton>
           <UButton size="xs" variant="soft" icon="i-ri-github-fill" :to="project.githubUrl" target="_blank"
             :disabled="!project.githubUrl" :name="`${project.name}-github`" :aria-label="`${project.name}-github`">
-          </UButton>
-          <UButton size="xs" variant="soft" icon="i-heroicons-window-solid" :to="project.url" target="_blank"
-            :disabled="!project.url" :name="`${project.name}-demo`" :aria-label="`${project.name}-demo`">
           </UButton>
         </div>
       </div>

@@ -52,7 +52,7 @@ onMounted(() => {
       }
     })
   }, {
-    threshold: 0.01
+    threshold: 0
   })
 
   observer.observe(creditline!)

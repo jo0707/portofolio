@@ -22,7 +22,6 @@ const props = defineProps({
 const bar = ref<HTMLElement | null>(null)
 const isBarVisible = useElementVisibility(bar)
 
-
 onMounted(() => {
   watchOnce(isBarVisible, (isVisible) => {
     if (isVisible) {
