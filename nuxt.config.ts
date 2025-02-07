@@ -5,14 +5,14 @@ export default defineNuxtConfig({
         "@nuxt/ui",
         "@nuxt/fonts",
         "@nuxtjs/seo",
-        "nuxt-gtag"
+        "nuxt-gtag",
     ],
 
     anime: {
         composables: true,
         autoImport: true,
     },
-    
+
     colorMode: {
         preference: "light",
     },

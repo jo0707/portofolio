@@ -1,21 +1,29 @@
 <template>
   <NuxtLayout class="font-['Poppins'] scroll-smooth overflow-x-hidden">
-    <ClientOnly>
-      <NuxtPage />
-    </ClientOnly>
+    <NuxtPage />
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
+import Lenis from 'lenis'
+import 'lenis/dist/lenis.css'
+
 useHead({
   htmlAttrs: {
     class: 'scroll-smooth'
   }
 })
+
+onMounted(() => {
+  if (window) {
+    const lenis = new Lenis({
+      autoRaf: true,
+    });
+  }
+})
 </script>
 
 <style>
-/* make scrollbar smoothly rounded and gray */
 ::-webkit-scrollbar {
   width: 8px;
   height: 12px;
