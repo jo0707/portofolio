@@ -11,7 +11,7 @@
 
       <div class="p-3 flex flex-col gap-2 grow group">
         <div class="flex flex-col w-fit group">
-          <NuxtLink class="font-bold text-primary w-fit" :href="project.url" target="_blank">{{ project.name }}</NuxtLink>
+          <NuxtLink class="font-bold text-primary w-fit line-clamp-1 overflow-ellipsis" :href="project.url" target="_blank">{{ project.name }}</NuxtLink>
           <div class="w-full h-[2px] bg-transparent overflow-hidden">
             <div class="h-full bg-primary -translate-x-full duration-500 ease-out group-hover:translate-x-0">
             </div>
