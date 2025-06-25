@@ -2,13 +2,30 @@ import type { Project } from "~/types/projects"
 
 export const projects: Project[] = [
     {
+        name: "PMK ITERA Official Website",
+        description: "The official website of PMK ITERA, providing information about the organization its activities.",
+        githubUrl: "https://github.com/Embedded-System-Team-8/landslide-early-warning-system",
+        image: "pmkitera",
+        url: "https://pmkitera.com/",
+        technologies: ["NextJS", "Firebase", "Gemini API", "WhatsApp API"],
+    },
+    {
+        name: "Landslide Early Warning System",
+        description:
+            "Embedded system project for landslide early warning using ESP32 with realtime data processing and alert system via Telegram.",
+        githubUrl: "https://github.com/Embedded-System-Team-8/landslide-early-warning-system",
+        image: "landslide-early-warning-system",
+        url: "",
+        technologies: ["Internet of Things", "Firebase", "NextJS", "Python"],
+    },
+    {
         name: "Sidosari Berseri",
         description:
             "A community initiative to create a healthier environment in Sidosari Village through waste segregation, enhancing green infrastructure, and promoting clean living habits.",
-        githubUrl: "https://github.com/jo0707/web-sidosari",
+        githubUrl: "https://github.com/Embedded-System-Team-8/landslide-early-warning-system",
         image: "sidosari-berseri",
         url: "https://web-sidosari.vercel.app/",
-        technologies: ["Next.js", "Vercel"],
+        technologies: ["NextJS", "Vercel"],
     },
     {
         name: "Banjar Agung Digitalization",
