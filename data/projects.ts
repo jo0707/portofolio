@@ -23,7 +23,7 @@ export const projects: Project[] = [
         name: "Sidosari Berseri",
         description:
             "A community initiative to create a healthier environment in Sidosari Village through waste segregation, enhancing green infrastructure, and promoting clean living habits.",
-        githubUrl: "https://github.com/jo0707/web-sidosari",
+        githubUrl: "https://github.com/Embedded-System-Team-8/landslide-early-warning-system",
         image: "sidosari-berseri",
         url: "https://web-sidosari.vercel.app/",
         technologies: ["NextJS", "Vercel"],
