@@ -10,8 +10,6 @@ export default defineNuxtConfig({
       preference: "light",
   },
 
-  css: ['~/assets/css/main.css'],
-
   ui: {
       safelistColors: ["amber", "green", "sky", "blue", "rose"],
   },
