@@ -22,7 +22,7 @@
         <div class="flex gap-2">
           <TechPopover class="w-fit self-end" :project="project" />
           <div class="grow"></div>
-          <UButton size="xs" variant="soft" icon="i-heroicons-window-solid" :to="project.url" target="_blank" label="Demo"
+          <UButton size="xs" variant="soft" icon="i-heroicons-window-solid" :to="project.url" target="_blank" label="App"
           :disabled="!project.url" :name="`${project.name}-demo`" :aria-label="`${project.name}-demo`">
         </UButton>
           <UButton size="xs" variant="soft" icon="i-ri-github-fill" :to="project.githubUrl" target="_blank"

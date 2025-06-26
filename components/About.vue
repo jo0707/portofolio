@@ -9,7 +9,8 @@
             <p>
                 I love solving problems around me, turning challenges into opportunities for innovation. I focus on
                 creating applications that blend functionality with intuitive design, ensuring a seamless user
-                experience.
+                experience. Beyond fullstack development, I'm passionate about exploring AI and IoT projects,
+                integrating cutting-edge technologies to build innovative solutions.
             </p>
             <p>
                 Began my focus in programming at 16 years old, I had the honor of participating in and winning 1st place
@@ -55,8 +56,10 @@ const skills = [
     { icon: 'i-skill-icons-golang', name: 'Golang', link: 'https://golang.org/' },
     { icon: 'i-skill-icons-python-light', name: 'Python', link: 'https://www.python.org/' },
     { icon: 'i-skill-icons-nuxtjs-light', name: 'Nuxt.js', link: 'https://nuxtjs.org/' },
+    { icon: 'i-skill-icons-nextjs-light', name: 'Nuxt.js', link: 'https://nextjs.org/' },
     { icon: 'i-skill-icons-mongodb', name: 'MongoDB', link: 'https://www.mongodb.com/' },
     { icon: 'i-vscode-icons-file-type-capacitor', name: 'Capacitor', link: 'https://capacitorjs.com/' },
+    { icon: 'i-simple-icons-pocketbase', name: 'PocketBase', link: 'https://pocketbase.io/' },
 ];
 
 function animateSkills() {
