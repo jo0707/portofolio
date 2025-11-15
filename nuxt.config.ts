@@ -15,8 +15,8 @@ export default defineNuxtConfig({
   },
 
   site: {
-      url: "https://jooo.site",
-      name: "Joshua Sinaga's Portofolio",
+      url: "https://itsjo.works/",
+      name: "Joshua Palti Sinaga's Portofolio",
       description:
           "Joshua Palti Sinaga is a web and mobile developer and currently an informatics engineering student. Love to learn new things and solving problems around me.",
       defaultLocale: "en",

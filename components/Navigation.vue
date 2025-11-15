@@ -11,5 +11,27 @@
 </template>
 
 <script lang="ts" setup>
-import { navigations } from '~/data/navigations';
+const navigations = [
+  {
+    name: "Jo",
+    link: "/",
+  },
+  {
+    name: "About",
+    link: "#about",
+  },
+  {
+    name: "Projects",
+    link: "#projects",
+  },
+  {
+    name: "Contact",
+    link: "#contact",
+  },
+  {
+    name: "Blog",
+    link: "https://blog.itsjo.works/",
+  },
+]
+
 </script>

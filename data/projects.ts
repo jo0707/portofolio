@@ -5,37 +5,10 @@ export const projects: Project[] = [
         name: "PMK ITERA Official Website",
         description:
             "Official website of PMK ITERA, a student organization at Institut Teknologi Sumatera. Contributed as a Full-stack developer.",
-        githubUrl: "https://github.com/Embedded-System-Team-8/landslide-early-warning-system",
+        githubUrl: "",
         image: "pmkitera",
         url: "pmkitera.com",
         technologies: ["NextJS", "Gemini API", "Whatsapp API", "Firebase"],
-    },
-    {
-        name: "Landslide Early Warning System",
-        description:
-            "Embedded System to detect landslides using ESP32 and sensors, with web dashboard, backend, and Telegram Alert.",
-        githubUrl: "https://github.com/Embedded-System-Team-8/landslide-early-warning-system",
-        image: "landslide",
-        url: "",
-        technologies: ["ESP32", "C++", "ReactJS", "Python", "Firebase", "Telegram API"],
-    },
-    {
-        name: "Sidosari Berseri",
-        description:
-            "A community initiative to create a healthier environment in Sidosari Village through waste segregation, enhancing green infrastructure, and promoting clean living habits.",
-        githubUrl: "https://github.com/Embedded-System-Team-8/landslide-early-warning-system",
-        image: "sidosari-berseri",
-        url: "https://web-sidosari.vercel.app/",
-        technologies: ["NextJS", "Vercel"],
-    },
-    {
-        name: "Banjar Agung Digitalization",
-        description:
-            "Digitalization of Posyandu data recording in Banjar Agung Village, contributed mainly as a Backend developer",
-        githubUrl: "",
-        image: "posyandu-banjar-agung",
-        url: "",
-        technologies: ["Laravel", "React", "MySQL"],
     },
     {
         name: "PPLK ITERA 2024",
@@ -47,11 +20,59 @@ export const projects: Project[] = [
         technologies: ["React", "Inertia"],
     },
     {
+        name: "Sidosari Berseri",
+        description:
+            "A community initiative to create a healthier environment in Sidosari Village through waste segregation, enhancing green infrastructure, and promoting clean living habits.",
+        githubUrl: "",
+        image: "sidosari-berseri",
+        url: "https://web-sidosari.vercel.app/",
+        technologies: ["NextJS", "Vercel"],
+    },
+    {
+        name: "RekanKita",
+        description:
+            "An app to provide capital for freelancers. Inspired by Pin'J - Winning IDCamp 2024 Developer Challenge #2",
+        githubUrl: "https://github.com/jo0707/rekankita",
+        image: "rekankita",
+        url: "rekankita.itsjo.works",
+        technologies: ["NextJS", "Gemini API", "Appwrite"],
+    },
+    {
+        name: "VibeMix",
+        description:
+            "A desktop application for creating video slideshows from images with merged audio tracks. Useful for Youtube music content creation.",
+        githubUrl: "https://github.com/jo0707/vibemix",
+        image: "vibemix",
+        url: "vibemix.itsjo.works",
+        technologies: ["NextJS", "Electron"],
+    },
+    {
+        name: "Landslide Early Warning System",
+        description:
+            "Embedded System to detect landslides using ESP32 and sensors, with web dashboard, backend, and Telegram Alert.",
+        githubUrl: "https://github.com/Embedded-System-Team-8/landslide-early-warning-system",
+        image: "landslide",
+        url: "",
+        technologies: ["ESP32", "C++", "ReactJS", "Python", "Firebase", "Telegram API"],
+    },
+
+    {
+        name: "Banjar Agung Digitalization",
+        description:
+            "Digitalization of Posyandu data recording in Banjar Agung Village, contributed mainly as a Backend developer",
+        githubUrl: "",
+        image: "posyandu-banjar-agung",
+        url: "",
+        technologies: ["Laravel", "React", "MySQL"],
+    },
+
+    {
         name: "Ketik Cepat!",
-        description: "A typing speed training application while learning English and Indonesian language.",
+        description:
+            "A typing speed training application while learning English and Indonesian language - Winning IDCamp 2023 Challenge",
         githubUrl: "https://github.com/jo0707/ketikcepat",
         image: "ketikcepat",
-        url: "https://ketikcepat.jooo.site",
+        url: "https://ketikcepat.itsjo.works",
         technologies: ["Vue 3", "Nuxt 3", "JavaScript", "CSS"],
     },
     {
@@ -76,7 +97,7 @@ export const projects: Project[] = [
         description: "An URL shortening service using MongoDB and Nuxt 3.",
         githubUrl: "https://github.com/jo0707/urlshort",
         image: "urlshort",
-        url: "https://s.jooo.site",
+        url: "https://s.itsjo.works",
         technologies: ["Nuxt 3", "MongoDB"],
     },
     {
@@ -84,7 +105,7 @@ export const projects: Project[] = [
         description: "Website to create digital envelopes.",
         githubUrl: "https://github.com/jo0707/myenvelope",
         image: "myenvelope.gif",
-        url: "https://myenvelope.jooo.site",
+        url: "https://myenvelope.itsjo.works",
         technologies: ["Vue 3", "Nuxt 3", "Starback.js", "MongoDB"],
     },
     {
@@ -100,7 +121,7 @@ export const projects: Project[] = [
         description: "Slicing design from codedesign.dev!",
         githubUrl: "https://github.com/jo0707/zeitplan",
         image: "zeitplan",
-        url: "https://zeitplan.jooo.site",
+        url: "https://zeitplan.itsjo.works",
         technologies: ["Vue 3", "Nuxt 3", "AOS"],
     },
     {
@@ -108,7 +129,7 @@ export const projects: Project[] = [
         description: "A quiz app made with Nuxt 3 and its ecosystem",
         githubUrl: "https://github.com/jo0707/quizzler",
         image: "quizzler",
-        url: "https://quizzler.jooo.site/",
+        url: "https://quizzler.itsjo.works/",
         technologies: ["Nuxt 3", "Vue 3", "TypeScript"],
     },
     {
@@ -116,7 +137,7 @@ export const projects: Project[] = [
         description: "Minimalist QR Generator & Scanner made with Nuxt 3",
         githubUrl: "https://github.com/jo0707/QRGen",
         image: "qrgen",
-        url: "https://qr.jooo.site/",
+        url: "https://qr.itsjo.works/",
         technologies: ["Nuxt 3", "Vue 3", "TypeScript"],
     },
     {
@@ -124,7 +145,7 @@ export const projects: Project[] = [
         description: "Tic Tac Toe game made with Vue 3, WindiCSS, and Motion One",
         githubUrl: "https://github.com/jo0707/Tic-Tac-Toe",
         image: "tictactoe",
-        url: "https://tictactoe.jooo.site/",
+        url: "https://tictactoe.itsjo.works/",
         technologies: ["Vue 3", "WindiCSS", "Motion One"],
     },
     {
@@ -140,7 +161,7 @@ export const projects: Project[] = [
         description: 'Tools to make text "explode" with CSS',
         githubUrl: "https://github.com/jo0707/text-explode",
         image: "explode",
-        url: "https://explode.jooo.site/",
+        url: "https://explode.itsjo.works/",
         technologies: ["CSS", "JavaScript"],
     },
     {
