@@ -10,6 +10,7 @@ import 'lenis/dist/lenis.css'
 
 useHead({
   htmlAttrs: {
+    lang: 'en',
     class: 'scroll-smooth'
   }
 })

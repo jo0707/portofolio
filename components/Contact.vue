@@ -15,7 +15,7 @@
                     <li v-for="social in socials" :key="social.name" class="w-full">
                         <NuxtLink :to="social.link" :color="social.color"
                             class="capitalize group w-full relative flex place-content-center place-items-center group gap-2 px-5 py-3 overflow-hidden rounded"
-                            :class="`text-${social.color}-500`" target="_blank">
+                            :class="`text-${social.color}-500`" target="_blank" rel="noopener noreferrer">
                             <UIcon :name="social.icon" class="w-6 h-6" />
                             <span>{{ social.name }}</span>
                             <div class="absolute top-0 left-0 w-full h-full translate-y-[101%] group-hover:translate-y-0 transition duration-300 ease-out"

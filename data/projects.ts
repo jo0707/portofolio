@@ -7,7 +7,7 @@ export const projects: Project[] = [
             "Official website of PMK ITERA, a student organization at Institut Teknologi Sumatera. Contributed as a Full-stack developer.",
         githubUrl: "",
         image: "pmkitera",
-        url: "pmkitera.com",
+        url: "https://pmkitera.com",
         technologies: ["NextJS", "Gemini API", "Whatsapp API", "Firebase"],
     },
     {
@@ -34,7 +34,7 @@ export const projects: Project[] = [
             "An app to provide capital for freelancers. Inspired by Pin'J - Winning IDCamp 2024 Developer Challenge #2",
         githubUrl: "https://github.com/jo0707/rekankita",
         image: "rekankita",
-        url: "rekankita.itsjo.works",
+        url: "https://rekankita.itsjo.works",
         technologies: ["NextJS", "Gemini API", "Appwrite"],
     },
     {
@@ -43,7 +43,7 @@ export const projects: Project[] = [
             "A desktop application for creating video slideshows from images with merged audio tracks. Useful for Youtube music content creation.",
         githubUrl: "https://github.com/jo0707/vibemix",
         image: "vibemix",
-        url: "vibemix.itsjo.works",
+        url: "https://vibemix.itsjo.works",
         technologies: ["NextJS", "Electron"],
     },
     {

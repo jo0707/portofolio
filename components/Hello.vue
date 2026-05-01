@@ -1,10 +1,10 @@
 <template>
   <div class="text-primary font-['Roboto_Mono'] font-bold text-4xl lg:text-5xl overflow-hidden">
     <Transition mode="out-in" appear>
-      <h1 v-if="currentIndex % 2 == 0">{{
-        texts[currentIndex].text }}</h1>
-      <h1 v-else-if="currentIndex % 2 == 1">{{
-        texts[currentIndex].text }}</h1>
+      <p v-if="currentIndex % 2 == 0" aria-live="polite">{{
+        texts[currentIndex].text }}</p>
+      <p v-else-if="currentIndex % 2 == 1" aria-live="polite">{{
+        texts[currentIndex].text }}</p>
     </Transition>
   </div>
 </template>
