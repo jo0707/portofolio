@@ -1,5 +1,5 @@
 <template>
-  <div class="text-primary font-['Courier_New',Courier,monospace] font-bold text-4xl lg:text-5xl overflow-hidden">
+  <div class="text-primary font-['Roboto_Mono'] font-bold text-4xl lg:text-5xl overflow-hidden">
     <Transition mode="out-in" appear>
       <p v-if="currentIndex % 2 == 0" aria-live="polite">{{
         texts[currentIndex].text }}</p>
