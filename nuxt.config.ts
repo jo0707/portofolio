@@ -20,6 +20,15 @@ export default defineNuxtConfig({
       description:
           "Joshua Palti Sinaga is a web and mobile developer and informatics engineering student who loves learning new things and solving problems.",
       defaultLocale: "en",
+      indexable: true,
+  },
+
+  robots: {
+      disallow: [],
+  },
+
+  sitemap: {
+      sources: ["/api/__sitemap__/urls"],
   },
 
   gtag: {

@@ -5,16 +5,17 @@
     <div class="flex flex-col text-start h-full group">
       <div class="relative h-36 group cursor-pointer">
         <img :src="getImageFilename(project.image)" :alt="project.name" class="w-full h-full object-cover object-center"
-          loading="lazy" />
+          loading="lazy" width="400" height="225" />
         <ProjectsImageModal :githubUrl="project.githubUrl" :url="projectUrl" :image="getImageFilename(project.image)"
           :alt="`${project.name} project screenshot`" class="absolute w-full h-full top-0 left-0" />
       </div>
 
       <div class="p-3 flex flex-col gap-2 grow group">
         <div class="flex flex-col w-fit group">
-          <NuxtLink v-if="projectUrl" class="font-bold text-primary w-fit line-clamp-1 overflow-ellipsis"
-            :to="projectUrl" target="_blank" rel="noopener noreferrer">{{ project.name }}</NuxtLink>
-          <span v-else class="font-bold text-primary w-fit line-clamp-1 overflow-ellipsis">{{ project.name }}</span>
+          <h3 v-if="projectUrl" class="font-bold text-primary w-fit line-clamp-1 overflow-ellipsis text-base">
+            <NuxtLink :to="projectUrl" target="_blank" rel="noopener noreferrer">{{ project.name }}</NuxtLink>
+          </h3>
+          <h3 v-else class="font-bold text-primary w-fit line-clamp-1 overflow-ellipsis text-base">{{ project.name }}</h3>
           <div class="w-full h-[2px] bg-transparent overflow-hidden">
             <div class="h-full bg-primary -translate-x-full duration-500 ease-out group-hover:translate-x-0">
             </div>

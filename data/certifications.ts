@@ -65,7 +65,7 @@ export const projects: Project[] = [
         name: "MyEnvelope",
         description: "Website to create digital envelopes.",
         githubUrl: "https://github.com/jo0707/myenvelope",
-        image: "myenvelope.gif",
+        image: "myenvelope.webp",
         url: "https://myenvelope.itsjo.works",
         technologies: ["Vue 3", "Nuxt 3", "Starback.js", "MongoDB"],
     },
