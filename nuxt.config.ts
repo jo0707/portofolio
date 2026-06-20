@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-      url: process.env.DOMAIN || "https://itsjo.works/",
+      url: process.env.DOMAIN || "https://itsjo.dev/",
       name: "Joshua Palti Sinaga's Portfolio",
       description:
           "Joshua Palti Sinaga is a web and mobile developer and informatics engineering student who loves learning new things and solving problems.",
@@ -25,7 +25,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
       public: {
-          siteUrl: process.env.DOMAIN || "https://itsjo.works/",
+          siteUrl: process.env.DOMAIN || "https://itsjo.dev/",
       },
   },
 

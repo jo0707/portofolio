@@ -34,7 +34,7 @@ export const projects: Project[] = [
             "An app to provide capital for freelancers. Inspired by Pin'J - Winning IDCamp 2024 Developer Challenge #2",
         githubUrl: "https://github.com/jo0707/rekankita",
         image: "rekankita",
-        url: "https://rekankita.itsjo.works",
+        url: "https://rekankita.itsjo.dev",
         technologies: ["NextJS", "Gemini API", "Appwrite"],
     },
     {
@@ -43,7 +43,7 @@ export const projects: Project[] = [
             "A desktop application for creating video slideshows from images with merged audio tracks. Useful for Youtube music content creation.",
         githubUrl: "https://github.com/jo0707/vibemix",
         image: "vibemix",
-        url: "https://vibemix.itsjo.works",
+        url: "https://vibemix.itsjo.dev",
         technologies: ["NextJS", "Electron"],
     },
     {
@@ -72,7 +72,7 @@ export const projects: Project[] = [
             "A typing speed training application while learning English and Indonesian language - Winning IDCamp 2023 Challenge",
         githubUrl: "https://github.com/jo0707/ketikcepat",
         image: "ketikcepat",
-        url: "https://ketikcepat.itsjo.works",
+        url: "https://ketikcepat.itsjo.dev",
         technologies: ["Vue 3", "Nuxt 3", "JavaScript", "CSS"],
     },
     {
@@ -97,7 +97,7 @@ export const projects: Project[] = [
         description: "An URL shortening service using MongoDB and Nuxt 3.",
         githubUrl: "https://github.com/jo0707/urlshort",
         image: "urlshort",
-        url: "https://s.itsjo.works",
+        url: "https://s.itsjo.dev",
         technologies: ["Nuxt 3", "MongoDB"],
     },
     {
@@ -105,7 +105,7 @@ export const projects: Project[] = [
         description: "Website to create digital envelopes.",
         githubUrl: "https://github.com/jo0707/myenvelope",
         image: "myenvelope.webp",
-        url: "https://myenvelope.itsjo.works",
+        url: "https://myenvelope.itsjo.dev",
         technologies: ["Vue 3", "Nuxt 3", "Starback.js", "MongoDB"],
     },
     {
@@ -121,7 +121,7 @@ export const projects: Project[] = [
         description: "Slicing design from codedesign.dev!",
         githubUrl: "https://github.com/jo0707/zeitplan",
         image: "zeitplan",
-        url: "https://zeitplan.itsjo.works",
+        url: "https://zeitplan.itsjo.dev",
         technologies: ["Vue 3", "Nuxt 3", "AOS"],
     },
     {
@@ -129,7 +129,7 @@ export const projects: Project[] = [
         description: "A quiz app made with Nuxt 3 and its ecosystem",
         githubUrl: "https://github.com/jo0707/quizzler",
         image: "quizzler",
-        url: "https://quizzler.itsjo.works/",
+        url: "https://quizzler.itsjo.dev/",
         technologies: ["Nuxt 3", "Vue 3", "TypeScript"],
     },
     {
@@ -137,7 +137,7 @@ export const projects: Project[] = [
         description: "Minimalist QR Generator & Scanner made with Nuxt 3",
         githubUrl: "https://github.com/jo0707/QRGen",
         image: "qrgen",
-        url: "https://qr.itsjo.works/",
+        url: "https://qr.itsjo.dev/",
         technologies: ["Nuxt 3", "Vue 3", "TypeScript"],
     },
     {
@@ -145,7 +145,7 @@ export const projects: Project[] = [
         description: "Tic Tac Toe game made with Vue 3, WindiCSS, and Motion One",
         githubUrl: "https://github.com/jo0707/Tic-Tac-Toe",
         image: "tictactoe",
-        url: "https://tictactoe.itsjo.works/",
+        url: "https://tictactoe.itsjo.dev/",
         technologies: ["Vue 3", "WindiCSS", "Motion One"],
     },
     {
@@ -161,7 +161,7 @@ export const projects: Project[] = [
         description: 'Tools to make text "explode" with CSS',
         githubUrl: "https://github.com/jo0707/text-explode",
         image: "explode",
-        url: "https://explode.itsjo.works/",
+        url: "https://explode.itsjo.dev/",
         technologies: ["CSS", "JavaScript"],
     },
     {
