@@ -38,6 +38,8 @@ useHead({
   link: [
     { rel: 'canonical', href: siteUrl },
     { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+    { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
   ],
   meta: [
     { name: 'theme-color', content: '#0284c7' },

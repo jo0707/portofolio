@@ -5,7 +5,9 @@
     <div class="flex flex-col text-start h-full group">
       <div class="relative h-36 group cursor-pointer">
         <img :src="getImageFilename(project.image)" :alt="project.name" class="w-full h-full object-cover object-center"
-          loading="lazy" width="400" height="225" />
+          loading="lazy" width="400" height="225"
+          :srcset="getSrcset(project.image)"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
         <ProjectsImageModal :githubUrl="project.githubUrl" :url="projectUrl" :image="getImageFilename(project.image)"
           :alt="`${project.name} project screenshot`" class="absolute w-full h-full top-0 left-0" />
       </div>
@@ -58,6 +60,16 @@ function normalizeExternalUrl(url?: string) {
 
 function getImageFilename(image: string) {
   return `/img/projects/${image}${image.includes('.') ? '' : '.webp'}`;
+}
+
+function getImageBase(image: string) {
+  // Strip extension if present
+  return image.includes('.') ? image.replace(/\.\w+$/, '') : image
+}
+
+function getSrcset(image: string) {
+  const base = `/img/projects/${getImageBase(image)}`
+  return `${base}_w400.webp 400w, ${base}_w800.webp 800w, ${base}.webp 1200w`
 }
 </script>
 

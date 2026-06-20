@@ -3,7 +3,10 @@
     <div ref="avatarContainer" id="avatarContainer"
       class="relative w-28 h-28 sm:w-40 sm:h-40 rounded-full overflow-hidden opacity-0">
       <img v-if="isAvatar" src="/img/profile.webp" alt="Portrait of Joshua Palti Sinaga"
-        class="absolute top-0 left-0 w-full h-full object-cover" width="256" height="256" />
+        class="absolute top-0 left-0 w-full h-full object-cover" width="256" height="256"
+        fetchpriority="high"
+        srcset="/img/profile_w160.webp 160w, /img/profile_w320.webp 320w, /img/profile.webp 512w"
+        sizes="(max-width: 640px) 112px, 160px" />
       <img v-else src="/img/logo.webp" alt="Joshua Palti Sinaga logo" class="absolute top-0 left-0 w-full h-full object-cover" width="256" height="256" />
       <div ref="avatarOverlay" id="avatarOverlay" class="w-[110%] h-full -translate-x-[101%] bg-primary-500"></div>
     </div>
