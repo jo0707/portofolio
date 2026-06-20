@@ -13,7 +13,7 @@ import { projects } from '~/data/projects'
 
 const title = 'Joshua Palti Sinaga — Web & Mobile Developer'
 const description = 'Portfolio of Joshua Palti Sinaga, a web and mobile developer focused on Nuxt, Next.js, TypeScript, AI, IoT, and mobile projects.'
-const siteUrl = 'https://itsjo.works/'
+const { siteUrl } = useSiteUrl()
 const ogImage = `${siteUrl}og-image.webp`
 
 useSeoMeta({

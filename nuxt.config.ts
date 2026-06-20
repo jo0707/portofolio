@@ -15,12 +15,18 @@ export default defineNuxtConfig({
   },
 
   site: {
-      url: "https://itsjo.works/",
+      url: process.env.DOMAIN || "https://itsjo.works/",
       name: "Joshua Palti Sinaga's Portfolio",
       description:
           "Joshua Palti Sinaga is a web and mobile developer and informatics engineering student who loves learning new things and solving problems.",
       defaultLocale: "en",
       indexable: true,
+  },
+
+  runtimeConfig: {
+      public: {
+          siteUrl: process.env.DOMAIN || "https://itsjo.works/",
+      },
   },
 
   robots: {

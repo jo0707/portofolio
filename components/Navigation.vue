@@ -12,6 +12,8 @@
 </template>
 
 <script lang="ts" setup>
+const { baseDomain } = useSiteUrl()
+
 const navigations = [
   {
     name: "Jo",
@@ -31,7 +33,7 @@ const navigations = [
   },
   {
     name: "Blog",
-    link: "https://blog.itsjo.works/",
+    link: `https://blog.${baseDomain.value}/`,
     external: true,
   },
 ]
